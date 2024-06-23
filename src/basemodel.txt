@@ -11,15 +11,12 @@
                 <ul>
                     <li><a href = "./index.html">Home</a></li>
                     <li><a href = "BACS_Resume_Template_clean.pdf">Resume</a></li>
-                    <li><a href = "./certifications.html">Certifications</a></li>
-                    <li><a href = "#projects">Projects</a></li>
-                    <li><a href = "#contact">Contact</a></li>
                 </ul>
             </nav>
         </header>
 
         <main>
-            
+
         </main>
         <footer>
             <p>&copy; 2024 Ethan Clark. All rights reserved.</p>
