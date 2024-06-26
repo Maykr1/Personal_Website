@@ -1,0 +1,24 @@
+header {
+    background-color: rgb(177, 77, 82); /* Figure out a good header background color */
+    padding: 10px;
+    font-family: serif;
+    font-size: 20px;
+}
+
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif
+}
+
+h1 {
+    font-size: 100px;
+}
+
+#home {
+    background-image:url("background.jpg");
+    padding: 300px;
+    text-align: center;
+}
+
+#certifications {
+    line-height: 50px
+}
