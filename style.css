@@ -99,3 +99,7 @@ footer {
 #projects, #contact {
     border: 1px solid transparent;
 }
+
+#projects {
+    color: white;
+}
