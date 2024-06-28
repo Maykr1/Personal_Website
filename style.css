@@ -61,8 +61,7 @@ footer {
 
 #about {
     text-align: center;
-    margin: 0;
-    padding: 10px 500px;
+    padding: 10px 250px;
 }
 
 #about h2 {
@@ -71,16 +70,19 @@ footer {
 
 #certifications h2, #contact h2, #projects h2 {
     font-size: 30px;
+    margin: 20px 10px;
 }
 
 #about p {
     font-size: 24px;
     line-height: 50px;
+    margin: 20px 10px;
 }
 
 #certifications li, #contact p, #projects p {
     font-size: 20px;
     line-height: 25px;
+    margin: 20px 10px;
 }
 
 #certifications {
@@ -89,6 +91,7 @@ footer {
 
 #certifications a {
     text-decoration: none;
+    margin: 20px 10px;
 }
 
 #projects, #contact {
