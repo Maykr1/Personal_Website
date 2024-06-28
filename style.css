@@ -1,4 +1,4 @@
-html, body {
+body {
     margin: 0;
     padding: 0;
 }
@@ -35,7 +35,7 @@ footer {
 }
 
 .background-color {
-    background-color: maroon;
+    background-color: #353839;
 }
 
 #home {
@@ -44,7 +44,9 @@ footer {
     background-position: center;
     height: 800px;
     border: .5px solid transparent;
-    text-align: center;
+    text-align: center; 
+    position: relative;
+    width: 100%
 }
 
 #home .content {
@@ -86,7 +88,7 @@ footer {
 }
 
 #certifications {
-    border-top: 10px solid maroon;
+    border-top: 10px solid #353839;
 }
 
 #certifications a {
