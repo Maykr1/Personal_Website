@@ -6,5 +6,3 @@ Practice Website Created: June 19, 2024
 HTML Draft Created: June 23, 2024
 
 HTML & CSS Draft Created: June 28, 2024
-
-HTML & CSS Draft Created: Jun 28, 2024
