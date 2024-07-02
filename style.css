@@ -29,6 +29,10 @@ nav a {
     color:white;
 }
 
+a:hover {
+    opacity: 0.5;
+}
+
 footer {
     padding: 20px 0;
     text-decoration: none;
@@ -46,8 +50,8 @@ footer {
     background-image: url("certificates_images/background.jpg");
     background-size: cover;
     background-position: center;
+    overflow: hidden;
     height: 800px;
-    border: .5px solid transparent;
     text-align: center; 
     position: relative;
     width: 100%;
@@ -119,4 +123,8 @@ footer {
     width: 250px;
     height: 250px;
     
+}
+
+img:hover {
+    opacity: 0.5;
 }

@@ -29,6 +29,10 @@ nav a {
     color:white;
 }
 
+a:hover {
+    opacity: 0.5;
+}
+
 footer {
     padding: 20px 0;
     text-decoration: none;
