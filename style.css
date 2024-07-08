@@ -49,9 +49,10 @@ footer {
 #home {
     background-image: url("certificates_images/background.jpg");
     background-size: cover;
-    background-position: center;
+    background-attachment: fixed;
+    background-position:center;
+    height: 1000px;
     overflow: hidden;
-    height: 800px;
     text-align: center; 
     position: relative;
     width: 100%;
