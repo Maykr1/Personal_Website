@@ -9,4 +9,4 @@ HTML & CSS Draft Created: June 28, 2024
 
 Final Draft Completed: July 1st, 2024
 
-Note: I wil be adding changing to this website. It will primarily include the more I learn about web development and software engineering as a whole.
+Note: I wil be adding changes to this website. It will primarily include the more I learn about web development and software engineering as a whole.

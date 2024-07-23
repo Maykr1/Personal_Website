@@ -50,7 +50,7 @@ footer {
     background-image: url("certificates_images/background.jpg");
     background-size: cover;
     background-attachment: fixed;
-    background-position:center;
+    background-position: top;
     height: 1000px;
     overflow: hidden;
     text-align: center; 
