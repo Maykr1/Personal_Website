@@ -1,0 +1,153 @@
+// Variables
+$primary-font: 'Raleway', sans-serif;
+$primary-color: #353839;
+$text-color: white;
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  padding: 20px 0;
+}
+
+nav {
+  margin: 0;
+  text-align: center;
+
+  li {
+    display: inline-block;
+    font-family: $primary-font;
+    font-weight: 600;
+    font-size: 20px;
+    width: 100px;
+  }
+
+  a {
+    text-decoration: none;
+    color: $text-color;
+
+    &:hover {
+      opacity: 0.5;
+    }
+  }
+}
+
+footer {
+  padding: 20px 0;
+  text-decoration: none;
+  color: $text-color;
+  font-weight: 600;
+  font-size: 12px;
+  font-family: $primary-font;
+}
+
+.background-color {
+  background-color: $primary-color;
+}
+
+#home {
+  background-image: url("certificates_images/background.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: top;
+  height: 1000px;
+  overflow: hidden;
+  text-align: center;
+  position: relative;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+
+  .content {
+    position: relative;
+    font-size: 36px;
+    line-height: 0px;
+    top: 100px;
+    font-family: $primary-font;
+
+    h2 {
+      font-size: 24px;
+    }
+  }
+}
+
+#about {
+  text-align: center;
+  padding: 10px 50px;
+
+  h2 {
+    font-size: 46px;
+  }
+
+  p {
+    font-size: 24px;
+    line-height: 50px;
+    margin: 20px 10px;
+  }
+}
+
+#certifications {
+  border-top: 10px solid $primary-color;
+
+  h2 {
+    font-size: 30px;
+    margin: 20px 10px;
+  }
+
+  li, p {
+    font-size: 20px;
+    line-height: 25px;
+    margin: 20px 10px;
+  }
+
+  a {
+    text-decoration: none;
+    margin: 20px 10px;
+  }
+}
+
+#projects, #contact {
+  border: 1px solid transparent;
+
+  h2 {
+    font-size: 30px;
+    margin: 20px 10px;
+  }
+
+  p {
+    font-size: 20px;
+    line-height: 25px;
+    margin: 20px 10px;
+  }
+}
+
+#projects {
+  color: $text-color;
+
+  li {
+    display: inline-block;
+    margin: 20px;
+
+    img {
+      width: 250px;
+      height: 250px;
+
+      &:hover {
+        opacity: 0.5;
+      }
+    }
+  }
+}
+
+img:hover {
+  opacity: 0.5;
+}
+
+//Say sass --watch style.scss:style.css for automatic changes
+//Can also say sass style.scss style.css to update it
