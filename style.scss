@@ -52,6 +52,7 @@ h1 {
 
 p {
     color: $dark-slate;
+    font-size: 20px;
 }
 
 .numbered_heading {
@@ -85,13 +86,17 @@ ul {
     color: $slate;
 }
 
-.card-header a {
-    float: right;
-    svg {
-        transition: fill 0.5s ease;  
-    }
-    :hover {
-        fill: $comp-green
+.card-header {
+    font-size: 24px;
+    a {
+        float: right;
+        text
+        svg {
+            transition: fill 0.5s ease;  
+        }
+        :hover {
+            fill: $comp-green
+        }
     }
 }
 
