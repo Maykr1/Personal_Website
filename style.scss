@@ -21,7 +21,6 @@ html, body {
 
 .content {
     font-size: 24px;
-    
 }
 
 .nav-link {
@@ -99,13 +98,13 @@ ul {
 .card-header {
     font-size: 24px;
     a {
-        float: right;
-        text
+        float:right; 
         svg {
+            fill: $slate;
             transition: fill 0.5s ease;  
         }
-        :hover {
-            fill: $comp-green
+        &:hover svg {
+            fill: $comp-green;
         }
     }
 }
@@ -145,8 +144,8 @@ ul {
                     fill: $slate;
                     transition: fill 0.5s ease;  
                 }
-                :hover {
-                    fill: $comp-green
+                &:hover svg {
+                    fill: $comp-green;
                 }
             }
         }
