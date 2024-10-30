@@ -1,78 +1,270 @@
 <!DOCTYPE html>
 <html lang = "en">
-    <head>
-        <meta charset="utf-8">
-        <title>Ethan Clark Portfolio</title>
-        <link rel = "stylesheet" href = "style.css">
-        <link href='https://fonts.googleapis.com/css?family=Raleway:400, 600' rel='stylesheet' type='text/css'>
-    </head>
-    
-    <body>
-        <header class = "background-color">
-            <nav>
+<head>
+    <meta charset="utf-8">
+    <title>Ethan Clark Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel = "stylesheet" href = "style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar-dark bg-dark navbar navbar-expand-sm">    
+        <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+            <ul class="navbar-nav content">
+                <li class="nav-item active">
+                    <a class="nav-link" href="./index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./BACS_Resume.docx">Resume</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#certifications">Certifications</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class = "container">
+        <!-- Home -->
+        <div class = "row">
+            <div class = "col">
+                <h1>Hi my name is</h1>
+                <h2 class = "big_header">Ethan Clark.</h2>
+                <h3 class = "big_header_2">I build things.</h3>
+                <p>I'm a software engineer specializing in Java, C++, and Python Programming. I am currently focusing on reinforcing my skill set and learning about Artificial Intelligence.</p>
+            </div>
+        </div>
+
+        <!-- About Me -->
+        <div class = "row">
+            <h2 class = "numbered_heading">About Me</h2>
+            <div class = "col">
+                <p>Hello! My name is Ethan Clark and I am an aspiring Software Developer who specializes in Python, Java, C, and C++ Programming. I am pursuing a degree in Computer Science with an emphasis in Artifical Intelligence at the University of Louisville. Everyday I strive to learn something new relating to software engineering! </p>
+                <p>I am currently learning many topics on Codecademy including Artifical Intelligence, Computer Science, Python, Java, C, C++, HTML & CSS, and much more. In fact, I learned how to make this very website using Codecademy!</p>
+                <p>Here are some of the technologies I've been working with recently:</p>
                 <ul>
-                    <li><a href = "./index.html">Home</a></li>
-                    <li><a href = "./certificates_images/Ethan_Clark_BACS_Resume.pdf">Resume</a></li>
-                    <li><a href = "#projects">Projects</a></li>
+                    <li>Python w/ Django</li>
+                    <li>Java</li>
+                    <li>C++</li>
+                    <li>MySQL & Databases</li>
+                    <li>HTML5 w/ Bootstrap</li>
+                    <li>CSS3 w/ SASS</li>
                 </ul>
-            </nav>
-        </header>
+            </div>
+
+            <div class = "col">
+                <img width = "500" height = "500" src = "face.jpeg">
+            </div>
+        </div>
+        <br>
+
+        <!-- Projects -->
+        <div class = "row">
+            <h2 class = "numbered_heading">Projects</h2>
+
+            <div class = "col-md-6">
+                <div class = "card mb-3">
+                    <div class = "card-header">
+                        PasswordGeneRate
+                        <a href = "https://github.com/Maykr1/PasswordGeneRate">
+                            <svg width = "24" height = "24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3 .3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5 .3-6.2 2.3zm44.2-1.7c-2.9 .7-4.9 2.6-4.6 4.9 .3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3 .7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3 .3 2.9 2.3 3.9 1.6 1 3.6 .7 4.3-.7 .7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3 .7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3 .7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+                        </a>
+                    </div>
+                    <img class = "card-img-top" src = "./card_images/PasswordGeneRate.png" alt = "PasswordGeneRate">
+                    <div class = "card-body">
+                        <p class = "card-text">Developed a web application using Python and the Django framework that allows user to generate or rate passwords.</p>
+                        <p class = "card-text">Passwords are generated based on a set of criteria.</p>
+                        <p class = "card-text">When a user inputs a password, if it matches one from a database of 1 million common passwords, it will notify the user with an insult.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class = "col-md-6">
+                <div class = "card mb-3">
+                    <div class = "card-header">Robot Arm V1</div>
+                    <img class = "card-img-top" src = "./card_images/RobotArmV1.jpg" alt = "Robot Arm V1">
+                    <div class = "card-body">
+                        <p class = "card-text">Created a stationary robot arm. I used several MG996r servo motors, a Raspberry Pi Zero 2 W, a PCA9685, and custom 3D printed parts.</p>
+                        <p class = "card-text">I wrote the code in Python with the pygame and Adafruit_pca9685 modules to link it with an Xbox controller.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class = "row">
+            <div class = "col-md-6">
+                <div class = "card mb-3">
+                    <div class = "card-header">
+                        Simple Bank Account Manager
+                        <a href = "https://github.com/Maykr1/Bank-Account-Final-Project-CSE-120">
+                            <svg width = "24" height = "24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3 .3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5 .3-6.2 2.3zm44.2-1.7c-2.9 .7-4.9 2.6-4.6 4.9 .3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3 .7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3 .3 2.9 2.3 3.9 1.6 1 3.6 .7 4.3-.7 .7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3 .7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3 .7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+                        </a>
+                    </div>
+                    <img class = "card-img-top" src = "./card_images/SimpleBankManager.png" alt = "Simple Bank Account Manager">
+                    <div class = "card-body">
+                        <p class = "card-text">Created a user interface using tkinter, PIL, and alexit.</p>
+                        <p class = "card-text">Adapted the program to allow user interaction with the bank account through several methods including withdrawing, depositing, and transferring money.</p>
+                        <p class = "card-text">Collaborated with a team of five to create the best possible scenarios for bank account management.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class = "col-md-6">
+                <div class = "card mb-3">
+                    <div class = "card-header">Red Hood Suit</div>
+                    <img class = "card-img-top" src = "./card_images/RedHoodSuit.jpeg" alt = "Red Hood Suit">
+                    <div class = "card-body">
+                        <p class = "card-text">Created a full body Red Hood suit out of 3D printed parts for Halloween.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
         
-        <main>
-            <div id = "home">
-                <div class = "content">
-                    <h1><b>Ethan Clark</b></h1>
-                    <h2>Software Developer</h2>
-                </div>  
+        <div class = "row">
+            <div class = "col-md-6">
+                <div class = "card mb-3">
+                    <div class = "card-header">
+                        Trail of Thales
+                        <a href = "https://github.com/Maykr1/Trail-of-Thales-Final-Project-CSE-130">
+                            <svg width = "24" height = "24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3 .3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5 .3-6.2 2.3zm44.2-1.7c-2.9 .7-4.9 2.6-4.6 4.9 .3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3 .7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3 .3 2.9 2.3 3.9 1.6 1 3.6 .7 4.3-.7 .7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3 .7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3 .7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+                        </a>
+                    </div>
+                    <img class = "card-img-top" src = "./card_images/Thales.png" alt = "Trail of Thales">
+                    <div class = "card-body">
+                        <p class = "card-text">Developed a simple duplicate of "The Oregon Trail" using C Programming.</p>
+                        <p class = "card-text">Incorporated options for the user to select a path to walk and created a dice-event function to generate random events.</p>
+                        <p class = "card-text">Designed various user interfaces for the main menu, traveling events, monster battles, and the storyline.</p>
+                    </div>
+                </div>
             </div>
+            
+            <div class = "col-md-6">
+                <div class = "card mb-3">
+                    <div class = "card-header">Disability Inclusive Design Project - GE Appliances</div>
+                    <img width = 500 height = 500 class = "card-img-top" src = "./card_images/GE.jpg" alt = "Disability Inclusive Design Project - GE Appliances">
+                    <div class = "card-body">
+                        <p class = "card-text">In this project, I collaborated with a team of students where we evaluated and designed a table that accommodated handicapped individuals.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-            <div id = "about">
-                <h2>About Me</h2>
-                <p>My name is Ethan Clark and I am an aspiring Software Developer who specializes in Python, Java, C, and C++ Programming. I am pursuing a degree in Computer Science with an emphasis in Artifical Intelligence at the University of Louisville.  Everyday I strive to learn something new relating to software engineering! I am currently learning many topics on Codecademy including Artifical Intelligence, Computer Science, Python, Java, C, C++, HTML & CSS, and much more. In fact, I learned how to make this very website using Codecademy!</p>
+        <div class = "row">
+            <div class = "col-md-6">
+                <div class = "card mb-3">
+                    <div class = "card-header">"Moros" Helmet</div>
+                    <img class = "card-img-top" src = "./card_images/Moros.png" alt = "Moros Helmet">
+                    <div class = "card-body">
+                        <p class = "card-text">3D Modeled, 3D Printed, and spraypainted a custom helmet of my own design.</p>
+                    </div>
+                </div>
             </div>
-    
-            <div id = "certifications">
-                <h2>Certifications</h2>
-                <ol>
-                    <li><a href = "./certificates_images/GE_SWiFT.png">Certification in Students with Futures in Technology (SWiFT)</a></li>
-                    <li><a href = "./certificates_images/Learn_Python_3.pdf">Certification in Python 3</a></li>
-                    <li><a href = "./certificates_images/Learn_Raspberry_pi.pdf">Certification in Raspberry Pi</a></li>
-                    <li><a href = "./certificates_images/Learn_HTML.pdf">Certification in HTML</a></li>
-                    <li><a href = "./certificates_images/Learn_CSS.pdf">Certification in CSS</a></li>
-                    <li><a href = "./certificates_images/Learn_Bootstrap.pdf">Certification in Bootstrap</a></li>
-                    <li><a href = "./certificates_images/Learn_SASS.pdf">Certification in SASS</a></li>
-                    <li><a href = "./certificates_images/Learn_Java.pdf">Certification in Java</a></li>
-                    <li><a href = "./certificates_images/Learn_C++.pdf">Certification in C++</a></li>
-                    <li><a href = "./certificates_images/Learn_Django.pdf">Certification in Django</a></li>
-                    <li>In Progress...<a href = "">Professional Certification in Computer Science</a></li>
-                </ol>
+            
+            <div class = "col-md-6">
+                <div class = "card mb-3">
+                    <div class = "card-header">Gray Fox Helmet</div>
+                    <img class = "card-img-top" src = "./card_images/grayFox.png" alt = "Gray Fox Helmet">
+                    <div class = "card-body">
+                        <p class = "card-text">I built the Gray Fox Helmet from Metal Gear Solid.</p>
+                        <p class = "card-text">I used SG90 servo motors, 3D models from Cults3D, and some other hardware to give it the ability to open it's faceplate with the push of a button.</p>
+                        <p class = "card-text">This helmet was featured on <a href = https://www.youtube.com/watch?v=HqadBgHpV5Q>Saint Xavier's Youtube and News Channel.</a></p>
+                    </div>
+                </div>
             </div>
+        </div>
+        <br>
 
-            <div id = "projects" class = "background-color">
-                <h2>Projects</h2>
+        <!-- Certifications -->
+        <div class = "row" id = "certifications">
+            <h2 class = "numbered_heading">Certifications</h2>
+            <div class = "col">
+                <div id = "certificationsAlbum" class = "carousel slide" data-bs-ride = "carousel">
+                    <div class = "carousel-inner">
+                        <div class = "carousel-item active">
+                            <img src = "./certificates_png/Build_Python_Web_Apps_With_Django-1.png" class = "d-block w-100" alt = "">
+                        </div>
+
+                        <div class = "carousel-item">
+                            <img src = "./certificates_png/Learn_Bootstrap-1.png" class = "d-block w-100" alt = "">
+                        </div>
+
+                        <div class = "carousel-item">
+                            <img src = "./certificates_png/Learn_C++-1.png" class = "d-block w-100" alt = "">
+                        </div>
+
+                        <div class = "carousel-item">
+                            <img src = "./certificates_png/Learn_CSS-1.png" class = "d-block w-100" alt = "">
+                        </div>
+
+                        <div class = "carousel-item">
+                            <img src = "./certificates_png/Learn_HTML-1.png" class = "d-block w-100" alt = "">
+                        </div>
+
+                        <div class = "carousel-item">
+                            <img src = "./certificates_png/Learn_Java-1.png" class = "d-block w-100" alt = "">
+                        </div>
+
+                        <div class = "carousel-item">
+                            <img src = "./certificates_png/Learn_Python_3-1.png" class = "d-block w-100" alt = "">
+                        </div>
+
+                        <div class = "carousel-item">
+                            <img src = "./certificates_png/Learn_Raspberry_pi-1.png" class = "d-block w-100" alt = "">
+                        </div>
+
+                        <div class = "carousel-item">
+                            <img src = "./certificates_png/Learn_SASS-1.png" class = "d-block w-100" alt = "">
+                        </div>
+                    </div>
+
+                    <a class="carousel-control-prev" href="#certificationsAlbum" role="button" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#certificationsAlbum" role="button" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+
+        <!-- Contacts -->
+        <div class = "row" id = "footer">
+            <div class = "col">
                 <ul>
-                    <li><a href = "./projects/gray-fox.html"><img src = "./certificates_images/gray_fox.jpg" alt = "Gray Fox Helmet"></a></li>
-                    <li><a href = "./projects/moros.html"><img src = "./certificates_images/moros.jpg" alt = "Moros Helmet"></a></li>
-                    <li><a href = "./projects/red-hood.html"><img src = "./certificates_images/red_hood.jpg" alt = "Red Hood"></a></li>
+                    <li>
+                        <a href = "https://github.com/Maykr1" target = "_blank">
+                            <svg width = "24" height = "24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3 .3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5 .3-6.2 2.3zm44.2-1.7c-2.9 .7-4.9 2.6-4.6 4.9 .3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3 .7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3 .3 2.9 2.3 3.9 1.6 1 3.6 .7 4.3-.7 .7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3 .7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3 .7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href = "tel:5029949261">
+                            <svg width = "24" height = "24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M164.9 24.6c-7.7-18.6-28-28.5-47.4-23.2l-88 24C12.1 30.2 0 46 0 64C0 311.4 200.6 512 448 512c18 0 33.8-12.1 38.6-29.5l24-88c5.3-19.4-4.6-39.7-23.2-47.4l-96-40c-16.3-6.8-35.2-2.1-46.3 11.6L304.7 368C234.3 334.7 177.3 277.7 144 207.3L193.3 167c13.7-11.2 18.4-30 11.6-46.3l-40-96z"/></svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href = "mailto:eclark72713@gmail.com">
+                            <svg width = "24" height = "24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48L48 64zM0 176L0 384c0 35.3 28.7 64 64 64l384 0c35.3 0 64-28.7 64-64l0-208L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z"/></svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href = "https://www.linkedin.com/in/ethan-clark-0a17a72a4/">
+                            <svg width = "24" height = "24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M100.3 448H7.4V148.9h92.9zM53.8 108.1C24.1 108.1 0 83.5 0 53.8a53.8 53.8 0 0 1 107.6 0c0 29.7-24.1 54.3-53.8 54.3zM447.9 448h-92.7V302.4c0-34.7-.7-79.2-48.3-79.2-48.3 0-55.7 37.7-55.7 76.7V448h-92.8V148.9h89.1v40.8h1.3c12.4-23.5 42.7-48.3 87.9-48.3 94 0 111.3 61.9 111.3 142.3V448z"/></svg>
+                        </a>
+                    </li>
                 </ul>
+                <p>&copy; 2024 Ethan Clark. All rights reserved.</p>
             </div>
-    
-            <div id = "contact">
-                <h2>Contact Me</h2>
-                <p>Phone: <a href = "tel:5029949261">(502)994-9261</a></p>
-                <p>Email: <a href = "mailto:eclark72713@gmail.com">eclark72713@gmail.com</a></p>
-                <p>Github: <a href = "https://github.com/Maykr1" target = "_blank">Maykr1</a></p>
-                <p>LinkedIn: <a href = "https://www.linkedin.com/in/ethan-clark-0a17a72a4/">Ethan Clark</a></p>
-                <p>Cardinal Careers Profile: <a href = "https://cardinalcareers-csm.symplicity.com/profiles/ethan.clark" target = "_blank">ethan.clark</a></p>
-            </div> 
-        </main>
+        </div>
+        
 
-        <footer class = "background-color">
-            <p>&copy; 2024 Ethan Clark. All rights reserved.</p>
-        </footer>
-    </body>
-</html>
-
-<!-- Consider using index.html from TheBoxModel and test.html in DisplayAndPositioning as a good resource-->
-<!-- Consider using span instead of <ul> for the links like:
-<span><a href = "./index.html">Home</a></span>-->
+        <!-- Footer -->
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
