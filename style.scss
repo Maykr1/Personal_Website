@@ -75,7 +75,7 @@ p {
 .numbered_heading::after {
     content: ""; 
     height: 2px;
-    background-color: $slate; /* Change to a bright color for testing */
+    background-color: $slate;
     width: 15%;
     margin-left: 15px;
     position: absolute;
@@ -112,8 +112,8 @@ ul {
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
     background-color: $slate;
-    width: 40px; /* Adjust the width if needed */
-    height: 40px; /* Adjust the height if needed */
+    width: 40px;
+    height: 40px;
 }
 
 #footer {
