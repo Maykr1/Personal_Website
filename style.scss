@@ -1,5 +1,6 @@
 $comp-green: #64ffda;
 $slate: #CCD6F6;
+$dark-slate: #8892b0;
 $inter: 'Inter', sans-serif;
 
 * {
@@ -13,14 +14,26 @@ html, body {
     font-family: 'Roboto-Mono', monospace;
 }
 
+.content {
+    font-size: 24px !important;
+}
+
 .container {
     counter-reset: heading-counter;
+}
+
+.card {
+    background-color: #10283A;
+}
+
+.card-header {
+    color: $dark-slate;
 }
 
 h1 {
     margin-top: 50px;
     color: $comp-green;
-    font-size: 14px;
+    font-size: 20px;
 }
 
 .big_header {
@@ -38,7 +51,7 @@ h1 {
 }
 
 p {
-    color: #8892b0;
+    color: $dark-slate;
 }
 
 .numbered_heading {
@@ -62,7 +75,7 @@ p {
     content: ""; 
     height: 2px;
     background-color: $slate; /* Change to a bright color for testing */
-    width: 25%;
+    width: 15%;
     margin-left: 15px;
     position: absolute;
     top: 20px;
@@ -80,6 +93,15 @@ ul {
     :hover {
         fill: $comp-green
     }
+}
+
+.card-body a {
+    text-decoration: none;
+    color: $comp-green;
+}
+
+.card-body a:hover {
+    text-decoration: underline;
 }
 
 .carousel-control-prev-icon,
