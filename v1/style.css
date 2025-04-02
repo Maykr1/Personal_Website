@@ -1,0 +1,131 @@
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    padding: 20px 0;
+}
+
+nav {
+    margin: 0;
+    text-align: center;
+}
+
+nav li {
+    display: inline-block;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    width: 100px;
+}
+
+nav a {
+    text-decoration: none;
+    color:white;
+}
+
+a:hover {
+    opacity: 0.5;
+}
+
+footer {
+    padding: 20px 0;
+    text-decoration: none;
+    color:white;
+    font-weight: 600;
+    font-size: 12px;
+    font-family: 'Raleway', sans-serif;
+}
+
+.background-color {
+    background-color: #353839;
+}
+
+#home {
+    background-image: url("certificates_images/background.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: top;
+    height: 1000px;
+    overflow: hidden;
+    text-align: center; 
+    position: relative;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+#home .content {
+    position: relative;
+    font-size: 36px;
+    line-height: 0px;
+    top: 100px;
+    font-family: 'Raleway', sans-serif;
+}
+
+#home .content h2 {
+    font-size: 24px;
+}
+
+#about {
+    text-align: center;
+    padding: 10px 50px;
+}
+
+#about h2 {
+    font-size: 46px;
+}
+
+#certifications h2, #contact h2, #projects h2 {
+    font-size: 30px;
+    margin: 20px 10px;
+}
+
+#about p {
+    font-size: 24px;
+    line-height: 50px;
+    margin: 20px 10px;
+}
+
+#certifications li, #contact p, #projects p {
+    font-size: 20px;
+    line-height: 25px;
+    margin: 20px 10px;
+}
+
+#certifications {
+    border-top: 10px solid #353839;
+}
+
+#certifications a {
+    text-decoration: none;
+    margin: 20px 10px;
+}
+
+#projects, #contact {
+    border: 1px solid transparent;
+}
+
+#projects {
+    color: white;
+}
+
+#projects li {
+    display: inline-block;
+    margin: 20px;
+}
+
+#projects li img {
+    width: 250px;
+    height: 250px;
+    
+}
+
+img:hover {
+    opacity: 0.5;
+}
