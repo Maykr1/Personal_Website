@@ -95,6 +95,7 @@ ul {
 }
 .card-header a {
   float: right;
+  margin: 0 5px;
 }
 .card-header a svg {
   fill: #CCD6F6;
@@ -102,10 +103,6 @@ ul {
 }
 .card-header a:hover svg {
   fill: #64ffda;
-}
-
-.icon {
-  margin: 0 5px;
 }
 
 .card-body a {
