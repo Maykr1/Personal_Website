@@ -102,12 +102,16 @@ ul {
         svg {
             fill: $slate;
             transition: fill 0.5s ease;
-            margin: 0 5px;  
+            
         }
         &:hover svg {
             fill: $comp-green;
         }
     }
+}
+
+.icon {
+    margin: 0 5px;
 }
 
 .card-body a {
