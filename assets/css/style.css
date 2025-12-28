@@ -1,0 +1,169 @@
+@charset "UTF-8";
+* {
+  box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto-Mono", monospace; }
+
+.navbar-dark .hover-light {
+  transition: opacity 200ms  ease-in-out; }
+  .navbar-dark .hover-light:hover {
+    opacity: 0.5; }
+.navbar-dark .nav-link {
+  color: #f44; }
+  .navbar-dark .nav-link:hover {
+    text-decoration: underline;
+    text-decoration-color: #f44; }
+
+.heading_intro {
+  color: #f44;
+  font-size: clamp(14px, 5vw, 20px); }
+
+.heading_name {
+  color: #CCD6F6;
+  font-size: clamp(40px, 8vw, 80px);
+  font-weight: 700; }
+
+.heading_desc {
+  color: #778899;
+  font-size: clamp(30px, 8vw, 70px);
+  font-weight: 700; }
+
+a {
+  color: #f44;
+  text-decoration: none; }
+  a:hover {
+    text-decoration: underline;
+    text-decoration-color: #f44; }
+
+.job-tabs .nav-link {
+  color: #f44;
+  border-radius: 0;
+  text-align: left;
+  padding: .75rem 1rem;
+  border-left: 2px solid transparent;
+  transition: all 200ms ease; }
+  .job-tabs .nav-link:hover {
+    background: rgba(100, 255, 218, 0.05);
+    color: #f44; }
+  .job-tabs .nav-link.active {
+    color: #f44;
+    background: none;
+    border-left: 2px solid #f44; }
+
+.job-list {
+  list-style: none;
+  padding-left: 0; }
+  .job-list li {
+    position: relative;
+    padding-left: 1.25rem;
+    margin-bottom: .5rem; }
+    .job-list li::before {
+      content: "▹";
+      color: #f44;
+      position: absolute;
+      left: 0; }
+
+.project-image-wrapper {
+  position: relative;
+  border-radius: .75rem;
+  overflow: hidden; }
+  .project-image-wrapper img {
+    display: block;
+    width: 100%;
+    position: relative;
+    z-index: 0;
+    opacity: .9;
+    transition: opacity 200ms ease, transform 200ms ease; }
+  .project-image-wrapper::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(255, 0, 0, 0.25);
+    mix-blend-mode: multiply;
+    pointer-events: none;
+    opacity: 1;
+    z-index: 1;
+    transition: opacity 200ms ease; }
+  .project-image-wrapper:hover img {
+    opacity: 1;
+    transform: scale(1.02); }
+  .project-image-wrapper:hover::before {
+    opacity: 0.2; }
+
+.project-content {
+  background-color: #1a1d20;
+  position: relative;
+  z-index: 2; }
+
+@media (min-width: 768px) {
+  .project--image-left .project-content {
+    margin-left: -60px; }
+
+  .project--image-right .project-content {
+    margin-right: -60px; } }
+.project-tags li {
+  color: #8892b0; }
+
+.project-links a {
+  color: #ccd6f6;
+  font-size: 1.1rem;
+  transition: color 200ms ease, transform 200ms ease; }
+  .project-links a:hover {
+    text-decoration: none;
+    color: #f44;
+    transform: translateY(-1px); }
+
+.noteworthy-card {
+  background: #1a1d20;
+  color: #dee2e6;
+  border-radius: .75rem;
+  border: none;
+  box-shadow: 0 10px 30px -15px rgba(0, 0, 0, 0.6);
+  transition: transform 200ms ease, background 200ms ease, box-shadow 200ms ease; }
+  .noteworthy-card:hover {
+    transform: translateY(-6px);
+    background: rgba(255, 0, 0, 0.25);
+    box-shadow: 0 20px 30px -18px rgba(0, 0, 0, 0.75); }
+  .noteworthy-card .card-header {
+    background: transparent;
+    padding-bottom: .25rem; }
+    .noteworthy-card .card-header a {
+      position: relative;
+      z-index: 3;
+      color: #a8b2d1;
+      transition: color 200ms ease, transform 200ms ease; }
+      .noteworthy-card .card-header a:hover {
+        color: #f44;
+        transform: translateY(-1px); }
+  .noteworthy-card .card-title {
+    color: #e6f1ff; }
+    .noteworthy-card .card-title a {
+      color: inherit;
+      text-decoration: none; }
+      .noteworthy-card .card-title a:hover {
+        color: #f44; }
+  .noteworthy-card .card-text {
+    color: #a8b2d1; }
+  .noteworthy-card ul li {
+    color: #8892b0; }
+
+.text-accent {
+  color: #f44; }
+
+.archive-link {
+  color: #f44;
+  font-size: .9rem;
+  text-decoration: none; }
+  .archive-link:hover {
+    text-decoration: underline; }
+
+.contact_heading {
+  font-weight: 700;
+  margin-top: 100px;
+  font-size: clamp(30px, 5vw, 60px);
+  text-align: center; }
+
+/*# sourceMappingURL=style.css.map */

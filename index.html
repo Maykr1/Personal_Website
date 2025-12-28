@@ -1,321 +1,539 @@
 <!DOCTYPE html>
-<html lang = "en">
+<html lang="en" data-bs-theme="dark">
 <head>
-    <meta charset="utf-8">
-    <title>Ethan Clark Portfolio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Ethan Clark </title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel = "stylesheet" href = "style.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="icon" href="/assets/img/logoCircuit.ico">
 </head>
-
 <body>
-    <!-- Navbar -->
-    <nav class="navbar-dark bg-dark navbar navbar-expand-md container-fluid">
-        <a class="navbar-brand" href="#">
-            <img src = "logoCircuit.png" alt = "Logo" height="50">
-        </a>
+    <nav class="navbar navbar-dark bg-dark-subtle navbar-expand-md fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand hover-light" href="#">
+                <img src="assets/img/logoCircuit.png" alt="Logo" height="50">
+            </a>
 
-        <button class = "navbar-toggler" type = "button" data-bs-toggle = "collapse" data-bs-target = "#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-        <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
-            <ul class="navbar-nav content">
-                <li class="nav-item active">
-                    <a class="nav-link" href="./index.html">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="./BACS_Resume.pdf">Resume</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#certifications">Certifications</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="v1/index.html">V1</a>
-                </li>
-            </ul>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav content ms-auto mb-2 mb-md-0 align-items-center gap-4">
+                    <li class="nav-item"><a class="nav-link active" href="#"> Home </a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about"> About </a></li>
+                    <li class="nav-item"><a class="nav-link" href="#work"> Experience </a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects"> Projects </a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact"> Contact </a></li>
+                    <li class="nav-item"><a class="nav-link" href="./assets/resume.pdf"><button class="btn btn-outline-danger"> Resume </button></a></li>
+                </ul>
+            </div>
         </div>
     </nav>
 
-    <div class = "container">
-        <!-- Home -->
-        <div class = "row">
-            <div class = "col">
-                <h1>Hi, my name is</h1>
-                <h2 class = "big_header">Ethan Clark.</h2>
-                <h3 class = "big_header_2">I build things.</h3>
+    <div class="container mt-4">
+        <section class="hero" id="intro">
+            <div class="row vh-100 align-items-center">
+                <div class="col d-flex flex-column justify-content-center">
+                    <h5 class="heading_intro"> Hi, my name is </h1>
+                    <h1 class="heading_name">Ethan Clark.</h2>
+                    <h1 class="heading_desc">I build applications for the web.</h3>
+                    <p class="col-md-6"> I'm a software engineer specializing in building scalable, user-focused digital applications. My work combines strong, modern engineering design, with an emphasis on automation and reliability. 
+                        Currently, I am focused on building accesible, team member & customer-centered products at <a href="https://www.papajohns.com/">Papa John's</a>.</p>
+                </div>
             </div>
-        </div>
+        </section>
 
-        <!-- About Me -->
-        <div class = "row">
-            <h2 class = "numbered_heading">About Me</h2>
-            <div class = "col-12 col-md-6">
-                <p>Hello! My name is Ethan Clark and I am a Software Engineer who specializes in Python, SQL (including MySQL and PostgreSQL), Java, and C++ Programming. I am pursuing a degree in Computer Science with an emphasis in Artifical Intelligence at the University of Louisville. Everyday I strive to learn something new relating to software engineering! </p>
-                <p>I am currently learning many topics on Codecademy including Data Analytics, Artificial Intelligence, Computer Science, Python, Java, C++, HTML & CSS, and much more. In fact, I learned how to make this very website using Codecademy!</p>
-                <p>Here are some of the technologies I've been working with recently:</p>
-                <ul>
-                    <li>Python w/ Django</li>
-                    <li>PostgreSQL, MySQL & Databases</li>
-                    <li>Java</li>
-                    <li>C, C++</li>
-                    <li>HTML5 w/ Bootstrap</li>
-                    <li>CSS3 w/ SASS</li>
-                </ul>
+        <section id="about" class="mt-5 py-5">
+            <h2> About Me </h2>
+
+            <div class="row">
+                <div class="col-md-6">
+                    <p> Hello! My name is Ethan Clark and I am a Software Engineer who specializes in Backend Development. My interest in Backend Development started with my first internship at <a href="https://www.papajohns.com/">Papa John's</a>, 
+                        where I discovered my passion for building RESTful APIs and developing microservices. </p>
+                    
+                    <br>
+                    
+                    <p> Currently, I am a Senior at the <a href="https://louisville.edu/">University of Louisville</a>, studying for a Bachelor of Arts in Computer Science. 
+                        Outside of school, you can find me working on personal projects and continuing to further develop my understanding of these topics.</p>
+                    
+                    <br>
+
+                    <p> I also have recently launched a few <a href="#projects">personal projects</a> hosted on my home server. These incorporate many technologies, some of which are listed below:</p>
+
+                    <ul>
+                        <li> Java w/ Spring Boot </li>
+                        <li> Python w/ Django </li>
+                        <li> HTML5 w/ Bootstrap, CSS w/ SASS & JavaScript </li>
+                        <li> SQL (PostgreSQL & MySQL) </li>
+                        <li> Docker & Docker Compose </li>
+                        <li> Jenkins, Nexus, & SonarQube </li>
+                    </ul>
+                </div>
+
+                <div class="col-md-6 position-relative">
+                    <img width="500" height="500" src="./assets/img/face.jpeg" class="img-fluid" alt="Face Pic">
+                </div>
             </div>
+        </section>
 
-            <div class = "col-12 col-md-6 position-relative">
-                <img width = "500" height = "500" src = "face.jpeg" class = "img-fluid face" alt = "My face">
+        <section id="work" class="mt-5 py-5">
+            <h2> Where I've Worked </h2>
+
+            <div class="row">
+                <!-- LEFT NAV / JOB LIST -->
+                <div class="col-md-3">
+                    <ul class="nav nav-pills flex-column job-tabs" id="jobTabs" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active" id="tab-papajohns" data-bs-toggle="tab" data-bs-target="#panel-papajohns" type="button" role="tab">Papa John's</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="tab-kroger" data-bs-toggle="tab" data-bs-target="#panel-kroger" type="button" role="tab">Kroger</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="tab-ymca" data-bs-toggle="tab" data-bs-target="#panel-ymca" type="button" role="tab">YMCA</button>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- RIGHT CONTENT -->
+                <div class="col-md-6">
+                    <div class="tab-content">
+                        <div class="tab-pane fade show active" id="panel-papajohns" role="tabpanel">
+                            <h4 class="fw-bold">
+                                Software Engineer @ <a href="https://www.papajohns.com/">Papa John's</a>
+                            </h4>
+
+                            <p class="text-muted small mb-3">May 2025 - Present</p>
+
+                            <ul class="job-list">
+                                <li>Modernized legacy applications to align with current platform, security, and reliability standards.</li>
+                                <li>Assisted in the development of Docker-Compose based local development environment enabling team members to run and test multiple microservices consistently on their machines.</li>
+                                <li>Significantly reduced boilerplate code across multiple Java microservices by implementing Lombok annotations and updated dependency versions, improving code readability and maintainability.</li>
+                                <li>Developed intranet micro-applications for Papa John's in collaboration with LumApps and Northern Ground.</li>
+                                <li>Maintained backend services using Java and Spring Boot, deployed via Docker on Google Cloud infrastructure.</li>
+                            </ul>
+                        </div>
+
+                        <div class="tab-pane fade" id="panel-kroger" role="tabpanel">
+                            <h4 class="fw-bold">
+                                Produce Associate @ <a href="https://www.kroger.com/">Kroger</a>
+                            </h4>
+
+                            <p class="text-muted small mb-3">May 2022 - August 2025</p>
+
+                            <ul class="job-list">
+                                <li>Collaborated with team members to maintain optimal standards in the produce department.</li>
+                                <li>Assisted in training new employees on department procedures and customer service standards.</li>
+                                <li>Provided excellent customer service by assisting customers with product selection and inquiries.</li>
+                            </ul>
+                        </div>
+
+                        <div class="tab-pane fade" id="panel-ymca" role="tabpanel">
+                            <h4 class="fw-bold">
+                                Lifeguard @ <a href="https://www.ymcalouisville.org/locations/northeast">YMCA</a>
+                            </h4>
+
+                            <p class="text-muted small mb-3">July 2025 - November 2021</p>
+
+                            <ul class="job-list">
+                                <li>Collaborated with a team to maintain a safe, secure environment.</li>
+                                <li>Maintained pool safety and chemical levels to ensure safety compliance.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </div>
-        <br>
-
-        <!-- Projects -->
+        </section>
         
-        <div class = "row">
-            <h2 class = "numbered_heading">Projects</h2>
-            
-            <div class = "col-md-6">
-                <div class = "card mb-3">
-                    <div class = "card-header">[ TBD ]</div>
-                    <img class = "card-img-top" src = "./card_images/TBD.png" alt = "">
-                    <div class = "card-body">
-                        <p class = "card-text">[ Currently Deciding in Progress ]</p>
-                    </div>
-                </div>
-            </div>
+        <section id="projects" class="mt-5 py-5">
+            <h2> Notable Projects </h2>
 
-            <div class = "col-md-6">
-                <div class = "card mb-3">
-                    <div class = "card-header">
-                        To Do List
-                        <a href = "https://todo.ethansclark.com">
-                            <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M579.8 267.7c56.5-56.5 56.5-148 0-204.5c-50-50-128.8-56.5-186.3-15.4l-1.6 1.1c-14.4 10.3-17.7 30.3-7.4 44.6s30.3 17.7 44.6 7.4l1.6-1.1c32.1-22.9 76-19.3 103.8 8.6c31.5 31.5 31.5 82.5 0 114L422.3 334.8c-31.5 31.5-82.5 31.5-114 0c-27.9-27.9-31.5-71.8-8.6-103.8l1.1-1.6c10.3-14.4 6.9-34.4-7.4-44.6s-34.4-6.9-44.6 7.4l-1.1 1.6C206.5 251.2 213 330 263 380c56.5 56.5 148 56.5 204.5 0L579.8 267.7zM60.2 244.3c-56.5 56.5-56.5 148 0 204.5c50 50 128.8 56.5 186.3 15.4l1.6-1.1c14.4-10.3 17.7-30.3 7.4-44.6s-30.3-17.7-44.6-7.4l-1.6 1.1c-32.1 22.9-76 19.3-103.8-8.6C74 372 74 321 105.5 289.5L217.7 177.2c31.5-31.5 82.5-31.5 114 0c27.9 27.9 31.5 71.8 8.6 103.9l-1.1 1.6c-10.3 14.4-6.9 34.4 7.4 44.6s34.4 6.9 44.6-7.4l1.1-1.6C433.5 260.8 427 182 377 132c-56.5-56.5-148-56.5-204.5 0L60.2 244.3z"/></svg>
-                        </a>
-                        <a href = "https://github.com/Maykr1/ToDoList2">
-                            <svg width = "24" height = "24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3 .3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5 .3-6.2 2.3zm44.2-1.7c-2.9 .7-4.9 2.6-4.6 4.9 .3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3 .7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3 .3 2.9 2.3 3.9 1.6 1 3.6 .7 4.3-.7 .7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3 .7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3 .7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+            <!-- Featured Project 1 -->
+            <div class="project row align-items-center mb-5 project--image-left">
+
+                <!-- Image -->
+                <div class="col-md-7">
+                    <div class="project-image-wrapper hover-unred">
+                        <a href="https://task.ethansclark.com/">
+                            <img src="assets/img/task.png" alt="Image" class="img-fluid">
                         </a>
                     </div>
-                    <img class = "card-img-top" src = "./card_images/image.png" alt = "">
-                    <div class = "card-body">
-                        <p class = "card-text">Created a simple ToDoList Web App with the Spring Boot Framework. This web app is running 24/7 on my home server/home lab.</p>
-                        <p class = "card-text">I utilized Thymeleaf to create the front end of the web app.</p>
-                        <p class = "card-text">I also used Docker to run a PostgreSQL Container.</p>
+                </div>
+
+                <!-- Content -->
+                <div class="col-md-5">
+                    <div class="project-content p-4 rounded-3 shadow-lg text-end">
+                        <p class="text-accent small mb-1">Featured Project</p>
+                        <h3 class="h4 mb-3"><a href="https://task.ethansclark.com/">Personal Task Aggregator API</a></h3>
+
+                        <p class="project-description small mb-3">
+                            Built a modular, API-first backend on my self-hosted Home Server Platform to consolidate all of my tasks from Google Tasks, Google Calendar, Microsoft To Do, etc. into a singular API. 
+                        </p>
+
+                        <ul class="project-tags list-inline small mb-3">
+                            <li class="list-inline-item"> Java </li>
+                            <li class="list-inline-item"> Spring Boot </li>
+                            <li class="list-inline-item"> HTML5 </li>
+                            <li class="list-inline-item"> Bootstrap </li>
+                            <li class="list-inline-item"> CSS3 </li>
+                            <li class="list-inline-item"> SCSS </li>
+                            <li class="list-inline-item"> OAuth </li>
+                            <li class="list-inline-item"> Docker </li>
+                            <li class="list-inline-item"> Google Cloud </li>
+                        </ul>
+
+                        <div class="project-links">
+                            <a href="https://github.com/Maykr1/task-aggregator-api" class="me-3" aria-label="GitHub">
+                                <i class="bi bi-github"></i>
+                            </a>
+                            <a href="https://task.ethansclark.com/" aria-label="Live site">
+                                <i class="bi bi-box-arrow-up-right"></i>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
 
-        <div class = "row">
-            
+            <!-- Featured Project 2 -->
+            <div class="project row align-items-center mb-5 project--image-right">
 
-            <div class = "col-md-6">
-                <div class = "card mb-3">
-                    <div class = "card-header">
-                        PasswordGeneRate
-                        <a href = "https://github.com/Maykr1/PasswordGeneRate">
-                            <svg width = "24" height = "24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3 .3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5 .3-6.2 2.3zm44.2-1.7c-2.9 .7-4.9 2.6-4.6 4.9 .3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3 .7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3 .3 2.9 2.3 3.9 1.6 1 3.6 .7 4.3-.7 .7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3 .7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3 .7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+                <!-- Content -->
+                <div class="col-md-5 order-2 order-md-1">
+                    <div class="project-content p-4 rounded-3 shadow-lg text-start">
+                        <p class="text-accent small mb-1">Featured Project</p>
+                        <h3 class="h4 mb-3"><a href="https://todo2.ethansclark.com/">To Do List v2</a></h3>
+
+                        <p class="project-description small mb-3">
+                            Built a full-stack task management application to organize and track all of my personal to-do items.
+                        </p>
+
+                        <ul class="project-tags list-inline small mb-3">
+                            <li class="list-inline-item"> Java </li>
+                            <li class="list-inline-item"> Spring Boot </li>
+                            <li class="list-inline-item"> HTML5 </li>
+                            <li class="list-inline-item"> Bootstrap </li>
+                            <li class="list-inline-item"> CSS3 </li>
+                            <li class="list-inline-item"> SCSS </li>
+                            <li class="list-inline-item"> PostgreSQL </li>
+                            <li class="list-inline-item"> Docker </li>
+                        </ul>
+
+                        <div class="project-links">
+                            <a href="https://github.com/Maykr1/ToDoList2" class="me-3" aria-label="GitHub">
+                                <i class="bi bi-github"></i>
+                            </a>
+                            <a href="https://todo2.ethansclark.com/" aria-label="Live site">
+                                <i class="bi bi-box-arrow-up-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Image -->
+                <div class="col-md-7 order-1 order-md-2">
+                    <div class="project-image-wrapper hover-unred">
+                        <a href="https://todo2.ethansclark.com/">
+                            <img src="assets/img/ToDo.png" alt="Image" class="img-fluid">
                         </a>
                     </div>
-                    <img class = "card-img-top" src = "./card_images/PasswordGeneRate.png" alt = "PasswordGeneRate">
-                    <div class = "card-body">
-                        <p class = "card-text">Led a team and developed a web application using Python and the Django framework that allows user to generate or rate passwords.</p>
-                        <p class = "card-text">Passwords are generated based on a set of criteria.</p>
-                        <p class = "card-text">When a user inputs a password, if it matches one from a database of 1 million common passwords, it will notify the user with an insult.</p>
-                    </div>
-                </div>
+                </div>                
             </div>
 
-            <div class = "col-md-6">
-                <div class = "card mb-3">
-                    <div class = "card-header">Robot Arm V1</div>
-                    <img class = "card-img-top" src = "./card_images/RobotArmV1.jpg" alt = "Robot Arm V1">
-                    <div class = "card-body">
-                        <p class = "card-text">Created a stationary robot arm. I used several MG996r servo motors, a Raspberry Pi Zero 2 W, a PCA9685, and custom 3D printed parts.</p>
-                        <p class = "card-text">I wrote the code in Python with the pygame and Adafruit_pca9685 modules to link it with an Xbox controller.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
+            <!-- Featured Project 3 -->
+            <div class="project row align-items-center mb-5 project--image-left">
 
-        <div class = "row">
-            <div class = "col-md-6">
-                <div class = "card mb-3">
-                    <div class = "card-header">
-                        Simple Bank Account Manager
-                        <a href = "https://github.com/Maykr1/Bank-Account-Final-Project-CSE-120">
-                            <svg width = "24" height = "24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3 .3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5 .3-6.2 2.3zm44.2-1.7c-2.9 .7-4.9 2.6-4.6 4.9 .3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3 .7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3 .3 2.9 2.3 3.9 1.6 1 3.6 .7 4.3-.7 .7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3 .7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3 .7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+                <!-- Image -->
+                <div class="col-md-7">
+                    <div class="project-image-wrapper hover-unred">
+                        <a role="button">
+                            <img src="assets/img/ubuntu.png" alt="Image" class="img-fluid">
                         </a>
                     </div>
-                    <img class = "card-img-top" src = "./card_images/SimpleBankManager.png" alt = "Simple Bank Account Manager">
-                    <div class = "card-body">
-                        <p class = "card-text">Created a user interface using tkinter, PIL, and alexit.</p>
-                        <p class = "card-text">Adapted the program to allow user interaction with the bank account through several methods including withdrawing, depositing, and transferring money.</p>
-                        <p class = "card-text">Lead a team of five to create the best possible scenarios for bank account management.</p>
+                </div>
+
+                <!-- Content -->
+                <div class="col-md-5">
+                    <div class="project-content p-4 rounded-3 shadow-lg text-end">
+                        <p class="text-accent small mb-1">Featured Project</p>
+                        <h3 class="h4 mb-3"><a href="#projects">Home Server Platform</a></h3>
+
+                        <p class="project-description small mb-3">
+                            Designed and operated a self-hosted server platform using a lightweight Ubuntu Server distro for Jenkins CI/CD, Nexus artifact management, and various other services to monitor and manage autonomous backend applications.
+                        </p>
+
+                        <ul class="project-tags list-inline small mb-3">
+                            <li class="list-inline-item"> Linux </li>
+                            <li class="list-inline-item"> Docker </li>
+                            <li class="list-inline-item"> Jenkins </li>
+                            <li class="list-inline-item"> Nexus </li>
+                            <li class="list-inline-item"> SonarQube </li>
+                            <li class="list-inline-item"> Nginx </li>
+                            <li class="list-inline-item"> Cloudflare </li>
+                            <li class="list-inline-item"> Bitwarden </li>
+                            <li class="list-inline-item"> Splunk </li>
+                        </ul>
                     </div>
                 </div>
             </div>
-            
-            <div class = "col-md-6">
-                <div class = "card mb-3">
-                    <div class = "card-header">Red Hood Suit</div>
-                    <img class = "card-img-top" src = "./card_images/RedHoodSuit.jpeg" alt = "Red Hood Suit">
-                    <div class = "card-body">
-                        <p class = "card-text">Created a full body Red Hood suit out of 3D printed parts for Halloween.</p>
+        </section>
+
+        <section id="other_projects" class="text-center mt-5 py-5">
+            <h2> Other Projects </h2>
+            <a href="https://github.com/Maykr1"> View the Archive </a>
+
+            <!-- Row 1 -->
+            <div class="row g-4 mt-2">
+                <div class="col-sm-6 col-lg-3">
+                    <div class="card noteworthy-card">
+                        <div class="card-header d-flex justify-content-between align-items-start border-0">
+                            <i class="bi bi-folder2-open fs-2 text-accent"></i>
+                        </div>
+
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title mb-2"> Private Git Server </h5>
+
+                            <p class="card-text small mb-3">
+                                Lead a team to develop a private Git hosting server for the Seneca High School Computer Science curriculum.
+                            </p>
+
+                            <ul class="list-inline small mt-auto mb-0">
+                                <li class="list-inline-item"> Linux </li>
+                                <li class="list-inline-item"> Git </li>
+                                <li class="list-inline-item"> SSH </li>
+                                <li class="list-inline-item"> Bash </li>
+                                <li class="list-inline-item"> Shell Scripts </li>
+                            </ul>
+
+                            <a role="button" class="stretched-link" aria-label="Open project"></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-lg-3">
+                    <div class="card noteworthy-card">
+                        <div class="card-header d-flex justify-content-between align-items-start border-0">
+                            <i class="bi bi-folder2-open fs-2 text-accent"></i>
+
+                            <div class="d-flex gap-2">
+                                <a href="https://github.com/Maykr1/To-Do_ListApp" aria-label="GitHub">
+                                    <i class="bi bi-github"></i>
+                                </a>
+                                <a href="https://todo.ethansclark.com/" aria-label="Open project">
+                                    <i class="bi bi-box-arrow-up-right"></i>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title mb-2"> To Do List v1 </h5>
+
+                            <p class="card-text small mb-3">
+                                Built a full-stack task management application to organize and track personal to-do items.
+                            </p>
+
+                            <ul class="list-inline small mt-auto mb-0">
+                                <li class="list-inline-item"> Java </li>
+                                <li class="list-inline-item"> Spring Boot </li>
+                                <li class="list-inline-item"> HTML5 </li>
+                                <li class="list-inline-item"> Bootstrap </li>
+                                <li class="list-inline-item"> CSS3 </li>
+                            </ul>
+
+                            <a href="https://todo.ethansclark.com/" class="stretched-link" aria-label="Open project"></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-lg-3">
+                    <div class="card noteworthy-card">
+                        <div class="card-header d-flex justify-content-between align-items-start border-0">
+                            <i class="bi bi-folder2-open fs-2 text-accent"></i>
+
+                            <div class="d-flex gap-2">
+                                <a href="https://github.com/Maykr1/PasswordGeneRate" aria-label="GitHub">
+                                    <i class="bi bi-github"></i>
+                                </a>
+                                <a href="https://pgr.ethansclark.com/" aria-label="Open project">
+                                    <i class="bi bi-box-arrow-up-right"></i>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title mb-2"> PasswordGeneRate </h5>
+
+                            <p class="card-text small mb-3">
+                                Lead a team and developed a web application using Python and the Django framework that allows user to generate or rate passwords.
+                            </p>
+
+                            <ul class="list-inline small mt-auto mb-0">
+                                <li class="list-inline-item"> Python </li>
+                                <li class="list-inline-item"> Django </li>
+                                <li class="list-inline-item"> SQLite </li>
+                                <li class="list-inline-item"> HTML5 </li>
+                                <li class="list-inline-item"> Bootstrap </li>
+                                <li class="list-inline-item"> CSS3 </li>
+                                <li class="list-inline-item"> SCSS </li>
+                            </ul>
+
+                            <a href="https://pgr.ethansclark.com/" class="stretched-link" aria-label="Open project"></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-lg-3">
+                    <div class="card noteworthy-card">
+                        <div class="card-header d-flex justify-content-between align-items-start border-0">
+                            <i class="bi bi-folder2-open fs-2 text-accent"></i>
+                        </div>
+
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title mb-2"> Robot Arm </h5>
+
+                            <p class="card-text small mb-3">
+                                Created a stationary Robot arm that incorporates a Raspberry Pi Zero 2 W, several MG966r motors, a PCA9685, and custom 3D printed parts.
+                            </p>
+
+                            <ul class="list-inline small mt-auto mb-0">
+                                <li class="list-inline-item"> Python </li>
+                                <li class="list-inline-item"> Raspberry Pi </li>
+                                <li class="list-inline-item"> 3D Modeling </li>
+                                <li class="list-inline-item"> 3D Printing </li>
+                            </ul>
+
+                            <a role="button" class="stretched-link" aria-label="Open project"></a>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
+
+            <!-- Row 2 -->
+            <div class="row g-4 mt-2">
+                <div class="col-sm-6 col-lg-3">
+                    <div class="card noteworthy-card">
+                        <div class="card-header d-flex justify-content-between align-items-start border-0">
+                            <i class="bi bi-folder2-open fs-2 text-accent"></i>
+
+                            <div class="d-flex gap-2">
+                                <a href="https://github.com/Maykr1/Bank-Account-Final-Project-CSE-120" aria-label="GitHub">
+                                    <i class="bi bi-github"></i>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title mb-2"> Bank Account Manager </h5>
+
+                            <p class="card-text small mb-3">
+                                Lead a team of five to create a simple bank account manager using tkinter, PIL, and alexit.
+                            </p>
+
+                            <ul class="list-inline small mt-auto mb-0">
+                                <li class="list-inline-item"> Python </li>
+                            </ul>
+
+                            <a href="https://github.com/Maykr1/Bank-Account-Final-Project-CSE-120" class="stretched-link" aria-label="Open project"></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-lg-3">
+                    <div class="card noteworthy-card">
+                        <div class="card-header d-flex justify-content-between align-items-start border-0">
+                            <i class="bi bi-folder2-open fs-2 text-accent"></i>
+
+                            <div class="d-flex gap-2">
+                                <a href="https://github.com/Maykr1/Trail-of-Thales-Final-Project-CSE-130" aria-label="GitHub">
+                                    <i class="bi bi-github"></i>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title mb-2"> Trail of Thales </h5>
+
+                            <p class="card-text small mb-3">
+                                Lead a team of four to develop a simple C-based Game inspired by The Oregon Trail.
+                            </p>
+
+                            <ul class="list-inline small mt-auto mb-0">
+                                <li class="list-inline-item"> C </li>
+                            </ul>
+
+                            <a href="https://github.com/Maykr1/Trail-of-Thales-Final-Project-CSE-130" class="stretched-link" aria-label="Open project"></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-lg-3">
+                    <div class="card noteworthy-card">
+                        <div class="card-header d-flex justify-content-between align-items-start border-0">
+                            <i class="bi bi-folder2-open fs-2 text-accent"></i>
+                        </div>
+
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title mb-2"> Disability Inclusive Design - GE Appliances </h5>
+
+                            <p class="card-text small mb-3">
+                                I collaborated with a team of students where we evaluated and designed a table that accommodated handicapped individuals.
+                            </p>
+
+                            <ul class="list-inline small mt-auto mb-0">
+                                <li class="list-inline-item"> 3D Modeling </li>
+                                <li class="list-inline-item"> Research and Development (R&D) </li>
+                            </ul>
+
+                            <a role="button" class="stretched-link" aria-label="Open project"></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-lg-3">
+                    <div class="card noteworthy-card">
+                        <div class="card-header d-flex justify-content-between align-items-start border-0">
+                            <i class="bi bi-folder2-open fs-2 text-accent"></i>
+                        </div>
+
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title mb-2"> Gray Fox Helmet </h5>
+
+                            <p class="card-text small mb-3">
+                                Built the Gray Fox Helmet from Metal Gear Solid using several SG90 servo motors and an Arduino Uno.
+                            </p>
+
+                            <ul class="list-inline small mt-auto mb-0">
+                                <li class="list-inline-item"> Arduino </li>
+                                <li class="list-inline-item"> 3D Printing </li>
+                            </ul>
+
+                            <a role="button" class="stretched-link" aria-label="Open project"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
         
-        <div class = "row">
-            <div class = "col-md-6">
-                <div class = "card mb-3">
-                    <div class = "card-header">
-                        Trail of Thales
-                        <a href = "https://github.com/Maykr1/Trail-of-Thales-Final-Project-CSE-130">
-                            <svg width = "24" height = "24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3 .3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5 .3-6.2 2.3zm44.2-1.7c-2.9 .7-4.9 2.6-4.6 4.9 .3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3 .7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3 .3 2.9 2.3 3.9 1.6 1 3.6 .7 4.3-.7 .7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3 .7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3 .7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
-                        </a>
-                    </div>
-                    <img class = "card-img-top" src = "./card_images/Thales.png" alt = "Trail of Thales">
-                    <div class = "card-body">
-                        <p class = "card-text">Developed a simple C-based Game inspired by The Oregon Trail</p>
-                        <p class = "card-text">Incorporated options for the user to select a path to walk and created a dice-event function to generate random events.</p>
-                        <p class = "card-text">Designed various user interfaces for the main menu, traveling events, monster battles, and the storyline.</p>
-                    </div>
+        <section id="contact" class="text-center mt-5 py-5">
+            <div class="row justify-content-center ">
+                <div class="col-md-6">
+                    <h2 class="contact_heading"> Contact Me </h2>
+
+                    <br>
+
+                    <p> I am looking for new opportunities, and my inbox is open! 
+                        If you have any questions for me or just want to say him, I will get back with you as soon as possible!</p>
+
+                    <br>
+                    
+                    <a href="mailto:eclark72713@gmail.com"><button class="btn btn-lg btn-outline-danger">Say Hello</button></a>
                 </div>
             </div>
-            
-            <div class = "col-md-6">
-                <div class = "card mb-3">
-                    <div class = "card-header">Disability Inclusive Design Project - GE Appliances</div>
-                    <img width = 500 height = 500 class = "card-img-top" src = "./card_images/GE.jpg" alt = "Disability Inclusive Design Project - GE Appliances">
-                    <div class = "card-body">
-                        <p class = "card-text">In this project, I collaborated with a team of students where we evaluated and designed a table that accommodated handicapped individuals.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class = "row">
-            <div class = "col-md-6">
-                <div class = "card mb-3">
-                    <div class = "card-header">"Moros" Helmet</div>
-                    <img class = "card-img-top" src = "./card_images/Moros.png" alt = "Moros Helmet">
-                    <div class = "card-body">
-                        <p class = "card-text">3D Modeled, 3D Printed, and spraypainted a custom helmet of my own design.</p>
-                    </div>
-                </div>
-            </div>
-            
-            <div class = "col-md-6">
-                <div class = "card mb-3">
-                    <div class = "card-header">Gray Fox Helmet</div>
-                    <img class = "card-img-top" src = "./card_images/grayFox.png" alt = "Gray Fox Helmet">
-                    <div class = "card-body">
-                        <p class = "card-text">I built the Gray Fox Helmet from Metal Gear Solid.</p>
-                        <p class = "card-text">I used SG90 servo motors, 3D models from Cults3D, and some other hardware to give it the ability to open it's faceplate with the push of a button.</p>
-                        <p class = "card-text">This helmet was featured on <a href = https://www.youtube.com/watch?v=HqadBgHpV5Q>Saint Xavier's Youtube and News Channel.</a></p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <br>
-
-        <!-- Certifications -->
-        <div class = "row" id = "certifications">
-            <h2 class = "numbered_heading">Certifications</h2>
-            <div class = "col">
-                <div id = "certificationsAlbum" class = "carousel slide" data-bs-ride = "carousel">
-                    <div class = "carousel-inner">
-                        <div class = "carousel-item active">
-                            <img src = "./certificates_png/ComputerScience-1.png" class = "d-block w-100" alt = "">
-                        </div>
-
-                        <div class = "carousel-item">
-                            <img src = "./certificates_png/Build_Python_Web_Apps_With_Django-1.png" class = "d-block w-100" alt = "">
-                        </div>
-
-                        <div class = "carousel-item">
-                            <img src = "./certificates_png/Learn_Bootstrap-1.png" class = "d-block w-100" alt = "">
-                        </div>
-
-                        <div class = "carousel-item">
-                            <img src = "./certificates_png/Learn_C.png" class = "d-block w-100" alt = "">
-                        </div>
-
-                        <div class = "carousel-item">
-                            <img src = "./certificates_png/Learn_C++-1.png" class = "d-block w-100" alt = "">
-                        </div>
-
-                        <div class = "carousel-item">
-                            <img src = "./certificates_png/Learn_CSS-1.png" class = "d-block w-100" alt = "">
-                        </div>
-
-                        <div class = "carousel-item">
-                            <img src = "./certificates_png/Learn_HTML-1.png" class = "d-block w-100" alt = "">
-                        </div>
-
-                        <div class = "carousel-item">
-                            <img src = "./certificates_png/Learn_Java-1.png" class = "d-block w-100" alt = "">
-                        </div>
-
-                        <div class = "carousel-item">
-                            <img src = "./certificates_png/Learn_Python_3-1.png" class = "d-block w-100" alt = "">
-                        </div>
-
-                        <div class = "carousel-item">
-                            <img src = "./certificates_png/Learn_Raspberry_pi-1.png" class = "d-block w-100" alt = "">
-                        </div>
-
-                        <div class = "carousel-item">
-                            <img src = "./certificates_png/Learn_SASS-1.png" class = "d-block w-100" alt = "">
-                        </div>
-                    </div>
-
-                    <a class="carousel-control-prev" href="#certificationsAlbum" role="button" data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    </a>
-                    <a class="carousel-control-next" href="#certificationsAlbum" role="button" data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    </a>
-                </div>
-            </div>
-        </div>
-        
-
-        <!-- Contacts -->
-        <div class = "row" id = "footer">
-            <div class = "col">
-                <ul>
-                    <li>
-                        <a href = "https://github.com/Maykr1" target = "_blank">
-                            <svg width = "24" height = "24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3 .3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5 .3-6.2 2.3zm44.2-1.7c-2.9 .7-4.9 2.6-4.6 4.9 .3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3 .7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3 .3 2.9 2.3 3.9 1.6 1 3.6 .7 4.3-.7 .7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3 .7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3 .7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
-                        </a>
-                    </li>
-                    <li>
-                        <a href = "tel:5029949261">
-                            <svg width = "24" height = "24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M164.9 24.6c-7.7-18.6-28-28.5-47.4-23.2l-88 24C12.1 30.2 0 46 0 64C0 311.4 200.6 512 448 512c18 0 33.8-12.1 38.6-29.5l24-88c5.3-19.4-4.6-39.7-23.2-47.4l-96-40c-16.3-6.8-35.2-2.1-46.3 11.6L304.7 368C234.3 334.7 177.3 277.7 144 207.3L193.3 167c13.7-11.2 18.4-30 11.6-46.3l-40-96z"/></svg>
-                        </a>
-                    </li>
-                    <li>
-                        <a href = "mailto:eclark72713@gmail.com">
-                            <svg width = "24" height = "24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48L48 64zM0 176L0 384c0 35.3 28.7 64 64 64l384 0c35.3 0 64-28.7 64-64l0-208L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z"/></svg>
-                        </a>
-                    </li>
-                    <li>
-                        <a href = "https://www.linkedin.com/in/ethan-clark-0a17a72a4/">
-                            <svg width = "24" height = "24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M100.3 448H7.4V148.9h92.9zM53.8 108.1C24.1 108.1 0 83.5 0 53.8a53.8 53.8 0 0 1 107.6 0c0 29.7-24.1 54.3-53.8 54.3zM447.9 448h-92.7V302.4c0-34.7-.7-79.2-48.3-79.2-48.3 0-55.7 37.7-55.7 76.7V448h-92.8V148.9h89.1v40.8h1.3c12.4-23.5 42.7-48.3 87.9-48.3 94 0 111.3 61.9 111.3 142.3V448z"/></svg>
-                        </a>
-                    </li>
-                </ul>
-                <p>&copy; 2024 Ethan Clark. All rights reserved.</p>
-            </div>
-        </div>
-        
-
-        <!-- Footer -->
+        </section>
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
+</html>
